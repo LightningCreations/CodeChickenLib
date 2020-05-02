@@ -135,6 +135,12 @@ publishing {
                 }
             }
         }
+        // Temporary, does not need to be upstreamed
+        maven {
+            def home = System.getProperty("user.home")
+            url = "$home/Maven"
+            name = "LightningCreations"
+        }
     }
     publications {
         CodeChickenLib(MavenPublication) {
